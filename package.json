@@ -1,7 +1,7 @@
 {
   "name": "portfolio-andres-plazas",
   "version": "2.0.0",
-  "description": "Portfolio personal interactivo de Andrés Felipe Plazas Mendivelso",
+  "description": "Portafolio profesional de Andrés Plazas, desarrollador Full Stack Jr con React, Supabase y PostgreSQL.",
   "main": "index.html",
   "scripts": {
     "start": "python -m http.server 8000",
@@ -11,17 +11,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AndresPlazas10/Mi_Portafolio_2025.git"
+    "url": "https://github.com/AndresPlazas10/AndresPlazas10.github.io.git"
   },
   "keywords": [
     "portfolio",
-    "personal-website",
+    "desarrollador-full-stack-junior",
+    "react",
+    "supabase",
+    "postgresql",
     "frontend",
+    "backend",
     "javascript",
-    "css3",
-    "html5",
-    "responsive-design",
-    "web-development"
+    "web-performance",
+    "software-architecture"
   ],
   "author": {
     "name": "Andrés Felipe Plazas Mendivelso",
@@ -30,9 +32,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AndresPlazas10/Mi_Portafolio_2025/issues"
+    "url": "https://github.com/AndresPlazas10/AndresPlazas10.github.io/issues"
   },
-  "homepage": "https://github.com/AndresPlazas10/Mi_Portafolio_2025#readme",
+  "homepage": "https://github.com/AndresPlazas10/AndresPlazas10.github.io#readme",
   "devDependencies": {},
   "dependencies": {},
   "browserslist": [

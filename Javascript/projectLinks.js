@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 e.preventDefault();
                 const projectName = this.getAttribute('data-project');
                 
-                if (projectName === 'stockly') {
-                    // Mensaje para Stockly demo
-                    const userConfirm = confirm(`🚧 Demo de Stockly - En Desarrollo
+                if (projectName === 'stocky') {
+                    // Mensaje para Stocky demo
+                    const userConfirm = confirm(`🚧 Demo de Stocky - En Desarrollo
 
 Este es un proyecto en desarrollo activo. La demo puede contener:
 • Funcionalidades incompletas
@@ -35,7 +35,7 @@ Este es un proyecto en desarrollo activo. La demo puede contener:
                     
                     if (userConfirm) {
                         // Aquí puedes agregar el enlace a tu demo cuando esté listo
-                        alert('🔗 Enlace de demo pendiente de configurar.\n\nPara agregar el enlace:\n1. Edita el href en el HTML\n2. O usa: updateDemoLink("stockly", "tu-enlace-demo")');
+                        alert('🔗 Enlace de demo pendiente de configurar.\n\nPara agregar el enlace:\n1. Edita el href en el HTML\n2. O usa: updateDemoLink("stocky", "tu-enlace-demo")');
                     }
                 }
             });
@@ -71,8 +71,8 @@ Gestión de enlaces de proyectos
 
 Para actualizar enlaces:
 
-Para Stockly:
-✅ Proyecto ya configurado: https://stockly-mocha.vercel.app/
+Para Stocky:
+✅ Proyecto ya configurado: https://stocky-mocha.vercel.app/
 
 Para otros proyectos:
 updateProjectLink('nombre-proyecto', 'https://tu-enlace.com');

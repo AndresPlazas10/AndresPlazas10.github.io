@@ -3,15 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Andrés Plazas - Portfolio de Desarrollador</title>
+    <title>
+      Andrés Plazas | Desarrollador Full Stack Jr (React, Supabase, PostgreSQL)
+    </title>
     <meta
       name="description"
-      content="Portfolio de Andrés Felipe Plazas Mendivelso, estudiante de Ingeniería de Sistemas y desarrollador junior especializado en tecnologías web."
+      content="Portafolio profesional de Andrés Plazas, desarrollador Full Stack Jr. Proyectos con React, Supabase y PostgreSQL, enfoque en rendimiento, arquitectura limpia y resultados de negocio."
     />
     <meta
       name="keywords"
-      content="desarrollador, programador, portfolio, sistemas, universidad boyacá, javascript, react, django"
+      content="desarrollador full stack junior, react, supabase, postgresql, javascript, frontend, backend, optimizacion rendimiento web, arquitectura software, portafolio desarrollador"
     />
+    <meta name="author" content="Andrés Felipe Plazas Mendivelso" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Andrés Plazas | Desarrollador Full Stack Jr"
+    />
+    <meta
+      property="og:description"
+      content="Proyectos Full Stack con React, Supabase y PostgreSQL orientados a resolver problemas reales de negocio."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://andresplazas10.github.io/" />
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="config/supabase-config.js"></script>
     <script src="Javascript/wordAnimation.js" defer></script>
@@ -43,8 +57,10 @@
             class="profile-photo"
           />
           <div class="profile-info">
-            <h1>Andrés Plazas 🧑🏻‍💻 🇨🇴</h1>
-            <h2>Software_Developer_Jr</h2>
+            <h1 class="word-animated">Andrés Plazas</h1>
+            <h2 class="word-animated">
+              Desarrollador Full Stack Jr | React · Supabase · PostgreSQL
+            </h2>
           </div>
         </div>
         <ul role="menubar">
@@ -63,22 +79,41 @@
       <div class="container container-about">
         <section id="sobre-mi" aria-labelledby="about-heading">
           <h2 id="about-heading" class="sr-only">Sobre mí</h2>
-          <p>
-            Mi nombre es Andrés Felipe Plazas Mendivelso, soy estudiante de
-            septimo semestre de Ingeniería de Sistemas en la Universidad de
-            Boyacá. Formo parte del semillero de investigación SYSDITEL de la
-            Facultad de Ciencias e Ingeniería, donde participo en el desarrollo
-            de una aplicación con inteligencia artificial orientada a la gestión
-            de portafolios y reservas en restaurantes de Tunja. De manera
-            individual, me encuentro desarrollando una aplicación web para la
-            gestión de inventarios en cafeterías, restaurantes y bares. Cuento
-            con conocimientos en HTML, CSS, JavaScript, React y sus componentes,
-            Supabase, autenticación de usuarios, bases de datos, Vite como
-            herramienta de compilación y optimización, despliegue con Vercel,
-            Git y GitHub. Me apasionan la tecnología, la innovación y el
-            aprendizaje constante, siempre buscando participar en nuevos
-            proyectos que me permitan fortalecer mis habilidades y aportar
-            soluciones prácticas mediante el desarrollo de software.
+          <p class="about-intro word-animated">
+            Soy Andrés Felipe Plazas Mendivelso, estudiante de Ingeniería de
+            Sistemas y desarrollador Full Stack Jr. Construyo productos web que
+            resuelven operaciones reales en negocios de alimentos y retail,
+            combinando experiencia de usuario clara con backend sólido.
+          </p>
+          <div class="about-grid">
+            <article class="about-card">
+              <h3>Propuesta de valor</h3>
+              <p>
+                Convierto necesidades operativas en funcionalidades medibles:
+                control de inventario, flujo de ventas, autenticación segura y
+                reportes útiles para decisión.
+              </p>
+            </article>
+            <article class="about-card">
+              <h3>Enfoque técnico</h3>
+              <p>
+                React para interfaz modular, Supabase para backend as a service
+                y PostgreSQL como base transaccional. Priorizo diseño escalable,
+                componentes reutilizables y mantenimiento simple.
+              </p>
+            </article>
+            <article class="about-card">
+              <h3>Calidad y rendimiento</h3>
+              <p>
+                Implemento validaciones de entrada, consultas optimizadas,
+                carga diferida de scripts, semántica accesible y prácticas de
+                versionado orientadas a equipos.
+              </p>
+            </article>
+          </div>
+          <p class="availability">
+            Disponible para roles Junior Full Stack y Frontend con énfasis en
+            React, Supabase, PostgreSQL y mejora continua.
           </p>
           <div class="social-buttons">
             <a
@@ -107,14 +142,14 @@
 
       <div class="container container-projects" id="proyectos">
         <section aria-labelledby="projects-heading">
-          <h2 id="projects-heading">Mis Proyectos 🚀</h2>
+          <h2 id="projects-heading">Proyectos con impacto técnico 🚀</h2>
           <div class="projects-grid">
             <article class="project-card">
               <h3>Calculadora de direcciones IP, FLSM, VLSM</h3>
               <p>
-                Proyecto desarrollado como trabajo en mi universidad, en
-                conjunto con un compañero, nos permite calcular direcciones ip
-                usando técnicas de subnetting como vlsm, flsm.
+                Herramienta académica para calcular subnetting con FLSM y VLSM.
+                Me enfoqué en lógica de validación y precisión de resultados
+                para evitar errores de configuración en prácticas de redes.
               </p>
               <div class="tech-stack">
                 <span class="tech-label">Tecnologías:</span>
@@ -148,12 +183,12 @@
               >
             </article>
             <article class="project-card">
-              <h3>Stockly - Sistema de Gestión Empresarial</h3>
+              <h3>Stocky - Sistema de Gestión Empresarial</h3>
               <p>
-                Sistema avanzado de gestión de inventarios para cafeterías,
-                restaurantes y bares. Incluye control de stock, ventas, reportes
-                analíticos y gestión de empleados. Más completo y escalable que
-                proyectos anteriores.
+                Plataforma POS enfocada en cafeterías, restaurantes y bares para
+                centralizar inventario, ventas y operación diaria en una sola
+                interfaz. Diseñada con arquitectura escalable y datos
+                transaccionales confiables.
               </p>
               <div class="tech-stack">
                 <span class="tech-label">Tecnologías:</span>
@@ -185,21 +220,20 @@
                 </div>
               </div>
               <a
-                href="https://stockly-mocha.vercel.app/"
+                href="https://stocky-mocha.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="project-btn"
-                data-project="stockly"
-                >Ver Proyecto 🔗</a
+                data-project="stocky"
+                >Ver demo técnica 🔗</a
               >
             </article>
             <article class="project-card">
               <h3>Catálogo digital gastronómico en Tunja (Semillero)</h3>
               <p>
-                Proyecto del semillero de investigación que busca digitalizar la
-                oferta gastronómica de la ciudad, permitiendo a los usuarios
-                explorar menús de diferentes restaurantes en Tunja. Aún en fase
-                de planificación.
+                Iniciativa de investigación para digitalizar la oferta
+                gastronómica de Tunja, integrando catálogo y reservas. Proyecto
+                en etapa de definición funcional y arquitectura.
               </p>
               <div class="tech-stack">
                 <div class="tech-icons"></div>
@@ -209,6 +243,56 @@
               >
             </article>
           </div>
+          <article class="project-case-study" aria-labelledby="stocky-case-title">
+            <h3 id="stocky-case-title">Stocky: caso técnico destacado</h3>
+            <p>
+              Stocky nace para resolver un problema común en negocios pequeños y
+              medianos: pérdidas por control manual de inventario, poca
+              trazabilidad de ventas y reportes tardíos para tomar decisiones.
+            </p>
+            <div class="case-grid">
+              <div class="case-item">
+                <h4>Stack y arquitectura</h4>
+                <p>
+                  Frontend en React, backend y auth con Supabase, y datos en
+                  PostgreSQL. Separación por módulos para ventas, productos,
+                  empleados y reportes.
+                </p>
+              </div>
+              <div class="case-item">
+                <h4>Retos técnicos resueltos</h4>
+                <p>
+                  Sincronización de stock tras ventas, validación de
+                  transacciones, control de estados de interfaz y manejo robusto
+                  de errores para escenarios de red inestable.
+                </p>
+              </div>
+              <div class="case-item">
+                <h4>Decisiones clave</h4>
+                <p>
+                  Modelo de datos orientado a consistencia, componentes
+                  reutilizables, políticas de acceso por rol y flujos desacoplados
+                  para facilitar nuevas funcionalidades.
+                </p>
+              </div>
+              <div class="case-item">
+                <h4>Rendimiento y buenas prácticas</h4>
+                <p>
+                  Consultas optimizadas, reducción de renderizados innecesarios,
+                  carga diferida en vistas secundarias y estructura preparada
+                  para CI/CD y monitoreo.
+                </p>
+              </div>
+              <div class="case-item">
+                <h4>Diferenciador frente a otros POS</h4>
+                <p>
+                  Enfoque específico para negocios gastronómicos, simple de usar
+                  para operación diaria y diseñado para evolucionar sin rehacer
+                  la base técnica.
+                </p>
+              </div>
+            </div>
+          </article>
         </section>
       </div>
 

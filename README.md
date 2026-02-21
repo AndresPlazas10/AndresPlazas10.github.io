@@ -1,208 +1,109 @@
-# 🚀 Portfolio Personal - Andrés Felipe Plazas Mendivelso
+# Portafolio Profesional - Andrés Felipe Plazas Mendivelso
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://app.netlify.com/sites/your-site-name/deploys)
+Portafolio web personal orientado a reclutadores técnicos y empresas que buscan talento Junior con capacidad real de ejecución Full Stack.
 
-## 📋 Descripción
+## Perfil Profesional
 
-Portfolio personal interactivo de Andrés Felipe Plazas Mendivelso, estudiante de Ingeniería de Sistemas en la Universidad de Boyacá y desarrollador junior especializado en tecnologías web.
+Soy estudiante de Ingeniería de Sistemas y desarrollador Full Stack Jr.
+Trabajo con enfoque en:
 
-## ✨ Características
+- Construcción de soluciones web para problemas operativos reales
+- Desarrollo Frontend con React y JavaScript moderno
+- Backend con Supabase y modelado de datos en PostgreSQL
+- Buenas prácticas de arquitectura, rendimiento, accesibilidad y mantenimiento
 
-- **Diseño Responsive**: Adaptado para dispositivos móviles, tabletas y escritorio
-- **Navegación Intuitiva**: Sistema de navegación SPA (Single Page Application)
-- **Modal Interactivo**: Visualización de certificados y títulos
-- **Animaciones Suaves**: Efectos visuales optimizados para la experiencia del usuario
-- **Accesibilidad**: Cumple con estándares WCAG 2.1 para accesibilidad web
-- **SEO Optimizado**: Meta tags y estructura semántica optimizada
+## Proyecto Destacado: Stocky
 
-## 🛠️ Tecnologías Utilizadas
+### Problema que resuelve
 
-### Frontend
-- **HTML5**: Estructura semántica y accesible
-- **CSS3**: Estilos modernos con Flexbox, Grid y animaciones
-- **JavaScript ES6+**: Funcionalidades interactivas
-- **Google Fonts**: Tipografía Oswald
+Stocky resuelve desorden operativo en cafeterías, restaurantes y bares:
 
-### Herramientas de Desarrollo
-- **Git**: Control de versiones
-- **VS Code**: Editor de código
-- **Browser DevTools**: Debugging y testing
+- Control manual de inventario propenso a errores
+- Registro de ventas sin trazabilidad clara
+- Dificultad para generar reportes útiles para decisión
 
-## 📁 Estructura del Proyecto
+### Tecnologías principales
 
-```
-Mi_Portafolio_2025/
-├── index.html              # Página principal
-├── README.md               # Documentación del proyecto
-├── assets/                 # Recursos multimedia
-│   ├── certificates/       # Certificados y títulos
-│   ├── *.png              # Iconos de tecnologías
-│   ├── *.jpeg             # Imágenes y fotos
-│   └── *.mp4              # Video de fondo
-├── Javascript/             # Scripts del cliente
-│   ├── certModal.js       # Modal de certificados
-│   ├── navigation.js      # Sistema de navegación
-│   ├── tooltips.js        # Tooltips personalizados
-│   └── wordAnimation.js   # Animaciones de texto
-└── styles/
-    └── styles.css         # Estilos CSS principales
-```
+- React
+- Supabase (Autenticación, API y servicios backend)
+- PostgreSQL
+- JavaScript ES6+
 
-## 🚀 Instalación y Uso
+### Retos técnicos abordados
 
-### Prerrequisitos
-- Navegador web moderno (Chrome, Firefox, Safari, Edge)
-- Servidor web local (opcional, para desarrollo)
+- Sincronización correcta de inventario después de cada venta
+- Manejo de estados de interfaz en flujos críticos
+- Validación de datos para evitar inconsistencias transaccionales
+- Manejo de errores en escenarios de red inestable
 
-### Instalación
-1. **Clonar el repositorio**
-   ```bash
-   git clone https://github.com/AndresPlazas10/Mi_Portafolio_2025.git
-   cd Mi_Portafolio_2025
-   ```
+### Decisiones arquitectónicas
 
-2. **Abrir en navegador**
-   - Opción 1: Abrir `index.html` directamente en el navegador
-   - Opción 2: Usar un servidor local:
-     ```bash
-     # Con Python 3
-     python -m http.server 8000
-     
-     # Con Node.js (live-server)
-     npx live-server
-     
-     # Con PHP
-     php -S localhost:8000
-     ```
+- Separación funcional por módulos: ventas, inventario, empleados y reportes
+- Componentes reutilizables para escalar sin duplicar lógica
+- Modelo de datos orientado a consistencia y consultas claras
+- Enfoque de seguridad con control de acceso por rol
 
-3. **Acceder al portfolio**
-   - URL local: `http://localhost:8000`
-   - O directamente desde el archivo local
+### Optimización de rendimiento implementada
 
-## 🎯 Funcionalidades
+- Consultas optimizadas para reducir carga innecesaria
+- Reducción de renderizados innecesarios en vistas principales
+- Carga diferida de scripts en el portafolio (`defer`)
+- Estructura preparada para evolucionar a CI/CD y monitoreo
 
-### Navegación
-- **Sobre mí**: Información personal y profesional
-- **Proyectos**: Showcase de proyectos desarrollados
-- **Certificaciones**: Títulos y certificaciones obtenidas
+### Diferencial frente a otros POS
 
-### Interacciones
-- **Navegación SPA**: Cambio dinámico entre secciones
-- **Modal de Certificados**: Visualización ampliada de documentos
-- **Tooltips**: Información adicional en iconos de tecnología
-- **Enlaces Externos**: Acceso directo a GitHub y LinkedIn
+Stocky está pensado para operación gastronómica real: rápido de usar, mantenible y escalable sin rehacer la base técnica.
 
-## 📱 Responsive Design
+## Stack de este Portafolio
 
-El portfolio está optimizado para:
-- **Móviles**: 320px - 768px
-- **Tabletas**: 768px - 1024px
-- **Escritorio**: 1024px+
+- HTML5 semántico
+- CSS3 responsive
+- JavaScript modular
+- Accesibilidad con atributos ARIA
+- SEO On-Page (metadatos y jerarquía de contenido)
 
-### Breakpoints
-```css
-/* Tabletas */
-@media (max-width: 768px) { ... }
+## Palabras clave ATS incluidas en el proyecto
 
-/* Móviles */
-@media (max-width: 480px) { ... }
+- Desarrollador Full Stack Junior
+- React Developer
+- Supabase
+- PostgreSQL
+- JavaScript
+- Frontend Development
+- Backend Development
+- Optimización de rendimiento web
+- Arquitectura de software
+- Git y GitHub
+
+## Estructura del Proyecto
+
+```text
+.
+├── index.html
+├── README.md
+├── Javascript/
+├── styles/
+├── assets/
+└── config/
 ```
 
-## ♿ Accesibilidad
+## Ejecución local
 
-- **ARIA Labels**: Etiquetas descriptivas para lectores de pantalla
-- **Navegación por Teclado**: Soporte completo para navegación con teclado
-- **Contraste**: Cumple con ratios WCAG AA
-- **Semántica HTML**: Estructura HTML5 semánticamente correcta
-- **Reducción de Movimiento**: Respeta las preferencias del usuario
+1. Clona el repositorio.
+2. Entra a la carpeta del proyecto.
+3. Abre `index.html` o levanta un servidor local.
 
-## 🔧 Personalización
-
-### Colores
-```css
-:root {
-  --primary-color: #2c3e50;
-  --secondary-color: #34495e;
-  --accent-color: #007acc;
-  --text-color: #ffffff;
-  --background-overlay: rgba(0, 0, 0, 0.3);
-}
-```
-
-### Fuentes
-- **Principal**: Oswald (Google Fonts)
-- **Fallback**: System fonts
-
-## 📊 Performance
-
-### Optimizaciones Aplicadas
-- **CSS Optimizado**: Selectores eficientes y código limpio
-- **JavaScript Lazy Loading**: Scripts con atributo `defer`
-- **Imágenes Optimizadas**: Formatos web-friendly
-- **Código Minificado**: Listo para producción
-
-### Métricas de Rendimiento
-- **First Contentful Paint**: < 2s
-- **Largest Contentful Paint**: < 3s
-- **Cumulative Layout Shift**: < 0.1
-
-## 🌐 Deploy
-
-### Netlify
-1. Conectar repositorio de GitHub
-2. Configurar build settings:
-   - Build command: `# No build needed`
-   - Publish directory: `/`
-
-### GitHub Pages
-1. Ir a Settings > Pages
-2. Seleccionar branch `main`
-3. Carpeta raíz `/`
-
-### Vercel
 ```bash
-npx vercel --prod
+git clone https://github.com/AndresPlazas10/AndresPlazas10.github.io.git
+cd AndresPlazas10.github.io
+npx live-server
 ```
 
-## 🤝 Contribución
+## Contacto
 
-Las contribuciones son bienvenidas. Para contribuir:
-
-1. Fork el proyecto
-2. Crea una rama feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver [LICENSE](LICENSE) para más detalles.
-
-## 📞 Contacto
-
-**Andrés Felipe Plazas Mendivelso**
-
-- **GitHub**: [@AndresPlazas10](https://github.com/AndresPlazas10)
-- **LinkedIn**: [Andrés Felipe Plazas](https://www.linkedin.com/in/plazas-mendivelso-andrés-felipe-b122b7309)
-- **Universidad**: Universidad de Boyacá
-- **Semillero**: SYSDITEL - Facultad de Ciencias e Ingeniería
+- GitHub: [@AndresPlazas10](https://github.com/AndresPlazas10)
+- LinkedIn: [Andrés Felipe Plazas](https://www.linkedin.com/in/plazas-mendivelso-andrés-felipe-b122b7309)
 
 ---
 
-⭐ Si te gusta este proyecto, ¡dale una estrella en GitHub!
-
-## 🔄 Changelog
-
-### v2.0.0 (2025-11-03)
-- ✨ Estructura HTML semántica mejorada
-- 📱 Responsive design completamente optimizado
-- ♿ Mejoras significativas de accesibilidad
-- 🚀 JavaScript optimizado con manejo de errores
-- 🎨 CSS reorganizado y optimizado
-- 📝 Documentación completa
-
-### v1.0.0 (2025-09-25)
-- 🎉 Lanzamiento inicial del portfolio
-- 🏗️ Estructura básica implementada
-- 🎨 Diseño visual inicial
-Este es mi portafolio web al dia 25/09/2025
+Si eres reclutador o líder técnico, este portafolio está diseñado para mostrar cómo abordo problemas reales de negocio con criterio de ingeniería.

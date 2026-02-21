@@ -15,8 +15,10 @@ body {
     Oxygen, Ubuntu, Cantarell, sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: #ffffff;
 }
 
 /* Clase para elementos solo visibles para lectores de pantalla */
@@ -210,13 +212,10 @@ body {
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding-top: 50px;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  overflow: hidden;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 110px 0 2rem;
+  overflow-y: auto;
 }
 
 /* Estilos base comunes para todos los contenedores */
@@ -235,11 +234,11 @@ main {
 
 /* Contenedor específico para "Sobre mí" */
 .container-about {
-  max-width: 650px;
-  width: 90%;
-  margin: 0 auto 0 5%;
+  max-width: 980px;
+  width: 94%;
+  margin: 0 auto;
   height: auto;
-  min-height: 350px;
+  min-height: 380px;
   padding: 2rem;
   flex-direction: column;
 }
@@ -258,7 +257,7 @@ main {
 /* Responsive design para contenedores principales */
 @media (max-width: 768px) {
   main {
-    padding-top: 120px; /* Ajustar para navbar responsive */
+    padding-top: 160px; /* Ajustar para navbar responsive */
   }
   
   .container-about {
@@ -276,7 +275,7 @@ main {
 
 @media (max-width: 480px) {
   main {
-    padding-top: 150px;
+    padding-top: 190px;
   }
   
   .container-about,
@@ -287,15 +286,57 @@ main {
   }
 }
 
-#sobre-mi p {
-  font-size: 1.05rem;
-  line-height: 2.2;
-  color: #d4d4d4;
+#sobre-mi {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.about-intro {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e5e5e5;
   margin: 0;
-  text-align: justify;
-  padding: 1.5rem 2rem;
-  word-spacing: 0.1rem;
-  hyphens: auto;
+  text-align: left;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: left;
+  backdrop-filter: blur(5px);
+}
+
+.about-card h3 {
+  color: #ffffff;
+  font-size: 1.05rem;
+  margin-bottom: 0.45rem;
+}
+
+.about-card p {
+  color: #d9d9d9;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.availability {
+  background: rgba(0, 122, 204, 0.15);
+  border: 1px solid rgba(0, 122, 204, 0.45);
+  color: #eaf6ff;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  font-size: 0.98rem;
+  text-align: left;
 }
 
 /* Estilos para botones de redes sociales */
@@ -346,12 +387,21 @@ main {
 
 /* Responsive design para sección "Sobre mí" */
 @media (max-width: 768px) {
-  #sobre-mi p {
-    font-size: 0.95rem;
-    line-height: 2.0;
-    padding: 1.2rem 1.5rem;
-    word-spacing: 0.05rem;
-    text-align: justify;
+  .about-intro {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-card h3 {
+    font-size: 1rem;
+  }
+
+  .about-card p {
+    font-size: 0.9rem;
   }
   
   .social-buttons {
@@ -367,11 +417,17 @@ main {
 }
 
 @media (max-width: 480px) {
-  #sobre-mi p {
-    font-size: 0.85rem;
-    line-height: 1.9;
-    padding: 1rem;
-    text-align: justify;
+  .about-intro {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .availability {
+    font-size: 0.9rem;
   }
   
   .social-buttons {
@@ -404,11 +460,15 @@ main {
 }
 
 /* Si no usas spans, este es un efecto alternativo */
-#sobre-mi p {
+.about-intro,
+.about-card p,
+.availability {
   position: relative;
 }
 
-#sobre-mi p::selection {
+.about-intro::selection,
+.about-card p::selection,
+.availability::selection {
   background: rgba(255,255,255,0.3);
   text-shadow: 0 0 10px rgba(255,255,255,0.8);
 }
@@ -457,7 +517,7 @@ main {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1.2rem;
   width: 100%;
   padding: 0;
   max-width: 1200px;
@@ -468,7 +528,7 @@ main {
 @media (max-width: 1200px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.6rem;
+    gap: 1rem;
   }
 }
 
@@ -492,13 +552,13 @@ main {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;
-  padding: 0.7rem 1rem;
+  padding: 1rem;
   backdrop-filter: blur(8px);
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 180px;
+  min-height: 320px;
   position: relative;
   overflow: hidden;
 }
@@ -512,79 +572,72 @@ main {
 
 .project-card h3 {
   color: #ffffff;
-  margin-bottom: 0.4rem;
-  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  line-height: 1.1;
-  text-align: center;
-  min-height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  line-height: 1.25;
+  text-align: left;
 }
 
 .project-card p {
   color: #d4d4d4;
-  line-height: 1.4;
+  line-height: 1.45;
   margin: 0;
   margin-bottom: 0.6rem;
-  font-size: 1rem;
+  font-size: 0.95rem;
   flex-grow: 1;
-  text-align: justify;
+  text-align: left;
 }
 
 /* Responsive design para project cards */
 @media (max-width: 1200px) {
   .project-card {
-    padding: 0.7rem 3rem;
-    min-height: 160px;
+    padding: 0.95rem;
+    min-height: 310px;
   }
   
   .project-card h3 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     margin-bottom: 0.3rem;
-    min-height: 1.8rem;
   }
   
   .project-card p {
-    font-size: 0.95rem;
-    line-height: 1.3;
+    font-size: 0.92rem;
+    line-height: 1.4;
   }
 }
 
 @media (max-width: 768px) {
   .project-card {
-    padding: 0.8rem 2.8rem;
-    min-height: 170px;
+    padding: 0.9rem;
+    min-height: 260px;
   }
   
   .project-card h3 {
-    font-size: 1.05rem;
+    font-size: 1rem;
     margin-bottom: 0.4rem;
-    min-height: 1.9rem;
   }
   
   .project-card p {
-    font-size: 0.9rem;
-    line-height: 1.3;
+    font-size: 0.88rem;
+    line-height: 1.35;
   }
 }
 
 @media (max-width: 480px) {
   .project-card {
-    padding: 0.8rem 2.5rem;
-    min-height: 170px;
+    padding: 0.8rem;
+    min-height: 240px;
   }
   
   .project-card h3 {
-    font-size: 1rem;
+    font-size: 0.95rem;
     margin-bottom: 0.3rem;
-    min-height: 1.7rem;
   }
   
   .project-card p {
-    font-size: 0.85rem;
-    line-height: 1.2;
+    font-size: 0.84rem;
+    line-height: 1.3;
   }
 }
 
@@ -701,16 +754,6 @@ main {
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-/* Mensaje de desarrollo en blanco */
-.project-card strong {
-  color: white;
-}
-
-/* Padding superior para todos los párrafos de las tarjetas de proyecto */
-.project-card p {
-  padding-top: 20px;
-}
-
 .project-btn {
   display: inline-block;
   background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
@@ -760,6 +803,73 @@ main {
     padding: 0.5rem 1rem;
     font-size: 0.8rem;
     width: 100%;
+  }
+}
+
+.project-case-study {
+  margin-top: 1.6rem;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 1.2rem;
+  text-align: left;
+}
+
+.project-case-study h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.project-case-study > p {
+  color: #d7d7d7;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.case-item {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 0.9rem;
+}
+
+.case-item h4 {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.case-item p {
+  color: #cecece;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 900px) {
+  .case-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .project-case-study {
+    padding: 0.9rem;
+  }
+
+  .project-case-study h3 {
+    font-size: 1.1rem;
+  }
+
+  .case-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1170,5 +1280,3 @@ main {
     font-size: 1rem;
   }
 }
-
-
