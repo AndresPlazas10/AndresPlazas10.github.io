@@ -3,323 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Andrés Plazas | Desarrollador Full Stack Jr (React, Supabase, PostgreSQL)
-    </title>
+    <title>Andrés Plazas | Desarrollador Full Stack Jr</title>
     <meta
       name="description"
-      content="Portafolio profesional de Andrés Plazas, desarrollador Full Stack Jr. Proyectos con React, Supabase y PostgreSQL, enfoque en rendimiento, arquitectura limpia y resultados de negocio."
-    />
-    <meta
-      name="keywords"
-      content="desarrollador full stack junior, react, supabase, postgresql, javascript, frontend, backend, optimizacion rendimiento web, arquitectura software, portafolio desarrollador"
+      content="Portafolio profesional de Andrés Plazas, desarrollador Full Stack Jr. Proyectos con React, React Native, Supabase y PostgreSQL."
     />
     <meta name="author" content="Andrés Felipe Plazas Mendivelso" />
     <meta name="robots" content="index, follow" />
-    <meta
-      property="og:title"
-      content="Andrés Plazas | Desarrollador Full Stack Jr"
-    />
+    <meta property="og:title" content="Andrés Plazas | Desarrollador Full Stack Jr" />
     <meta
       property="og:description"
-      content="Proyectos Full Stack con React, Supabase y PostgreSQL orientados a resolver problemas reales de negocio."
+      content="Proyectos Full Stack con React, React Native, Supabase y PostgreSQL orientados a resolver problemas reales de negocio."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://andresplazas10.github.io/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="config/supabase-config.js"></script>
-    <script src="Javascript/wordAnimation.js" defer></script>
     <script src="Javascript/navigation.js" defer></script>
-    <script src="Javascript/tooltips.js" defer></script>
-    <script src="Javascript/certModal.js" defer></script>
-    <script src="Javascript/projectLinks.js" defer></script>
   </head>
   <body>
-    <video
-      class="background-video"
-      autoplay
-      muted
-      loop
-      preload="auto"
-      playsinline
-      aria-label="Video de fondo decorativo"
-    >
-      <source src="assets/217508.mp4" type="video/mp4" />
-      Tu navegador no soporta el elemento video.
-    </video>
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
 
-    <header>
-      <nav class="navbar" role="navigation" aria-label="Navegación principal">
-        <div class="profile-section">
-          <img
-            src="assets/WhatsApp Image 2025-09-25 at 09.36.35.jpeg"
-            alt="Foto de perfil de Andrés Plazas"
-            class="profile-photo"
-          />
-          <div class="profile-info">
-            <h1 class="word-animated">Andrés Plazas</h1>
-            <h2 class="word-animated">
-              Desarrollador Full Stack Jr | React · Supabase · PostgreSQL
-            </h2>
-          </div>
-        </div>
-        <ul role="menubar">
-          <li role="none"><a href="#sobre-mi" role="menuitem">Sobre mí</a></li>
-          <li role="none">
-            <a href="#proyectos" role="menuitem">Proyectos</a>
-          </li>
-          <li role="none">
-            <a href="#certificaciones" role="menuitem">Certificaciones</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="masthead" role="banner">
+      <div class="masthead__inner">
+        <a href="index.html" class="masthead__brand" aria-label="Inicio">
+          <span class="masthead__name">Andrés Plazas</span>
+          <span class="masthead__role">Full Stack Jr</span>
+        </a>
+        <nav class="masthead__nav" role="navigation" aria-label="Navegación principal">
+          <ol role="list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="formacion.html">Formación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ol>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <div class="container container-about">
-        <section id="sobre-mi" aria-labelledby="about-heading">
-          <h2 id="about-heading" class="sr-only">Sobre mí</h2>
-          <p class="about-intro word-animated">
-            Soy Andrés Felipe Plazas Mendivelso, estudiante de Ingeniería de
-            Sistemas y desarrollador Full Stack Jr. Construyo productos web que
-            resuelven operaciones reales en negocios de alimentos y retail,
-            combinando experiencia de usuario clara con backend sólido.
-          </p>
-          <div class="about-grid">
-            <article class="about-card">
-              <h3>Propuesta de valor</h3>
-              <p>
-                Convierto necesidades operativas en funcionalidades medibles:
-                control de inventario, flujo de ventas, autenticación segura y
-                reportes útiles para decisión.
-              </p>
-            </article>
-            <article class="about-card">
-              <h3>Enfoque técnico</h3>
-              <p>
-                React para interfaz modular, Supabase para backend as a service
-                y PostgreSQL como base transaccional. Priorizo diseño escalable,
-                componentes reutilizables y mantenimiento simple.
-              </p>
-            </article>
-            <article class="about-card">
-              <h3>Calidad y rendimiento</h3>
-              <p>
-                Implemento validaciones de entrada, consultas optimizadas,
-                carga diferida de scripts, semántica accesible y prácticas de
-                versionado orientadas a equipos.
-              </p>
-            </article>
-          </div>
-          <div class="social-buttons">
-            <a
-              href="https://www.linkedin.com/in/plazas-mendivelso-andrés-felipe-b122b7309"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-btn linkedin"
-              aria-label="Perfil de LinkedIn de Andrés Plazas"
-            >
-              <span class="social-icon" aria-hidden="true">💼</span>
-              LinkedIn
-            </a>
-            <a
-              href="https://github.com/AndresPlazas10"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-btn github"
-              aria-label="Perfil de GitHub de Andrés Plazas"
-            >
-              <span class="social-icon" aria-hidden="true">💻</span>
-              GitHub
-            </a>
-          </div>
-        </section>
-      </div>
-
-      <div class="container container-projects" id="proyectos">
-        <section aria-labelledby="projects-heading">
-          <h2 id="projects-heading">Proyectos con impacto técnico 🚀</h2>
-          <div class="projects-grid">
-            <article class="project-card">
-              <h3>Stocky - Sistema de Gestión Empresarial</h3>
-              <p>
-                Plataforma POS enfocada en cafeterías, restaurantes y bares para
-                centralizar inventario, ventas y operación diaria en una sola
-                interfaz. Diseñada con arquitectura escalable y datos
-                transaccionales confiables.
-              </p>
-              <div class="tech-stack">
-                <span class="tech-label">Tecnologías:</span>
-                <div class="tech-icons">
-                  <img
-                    src="assets/js.png"
-                    alt="JavaScript"
-                    class="tech-icon"
-                    title="JavaScript"
-                  />
-                  <img
-                    src="assets/react-svgrepo-com.svg"
-                    alt="React"
-                    class="tech-icon"
-                    title="React"
-                  />
-                  <img
-                    src="assets/supabase-icon.svg"
-                    alt="Supabase"
-                    class="tech-icon"
-                    title="Supabase"
-                  />
-                  <img
-                    src="assets/postgresql-logo-svgrepo-com.svg"
-                    alt="PostgreSQL"
-                    class="tech-icon"
-                    title="PostgreSQL"
-                  />
-                </div>
-              </div>
-              <a
-                href="https://stocky-mocha.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-btn"
-                data-project="stocky"
-                >Ver demo técnica 🔗</a
-              >
-            </article>
-            <article class="project-card">
-              <h3>Catálogo digital gastronómico en Tunja (Semillero)</h3>
-              <p>
-                Iniciativa de investigación para digitalizar la oferta
-                gastronómica de Tunja, integrando catálogo y reservas. Proyecto
-                en etapa de definición funcional y arquitectura.
-              </p>
-              <div class="tech-stack">
-                <div class="tech-icons"></div>
-              </div>
-              <span class="project-btn project-btn-disabled"
-                >En planificación 📋</span
-              >
-            </article>
-          </div>
-          <article class="project-case-study" aria-labelledby="stocky-case-title">
-            <h3 id="stocky-case-title">Stocky: caso técnico destacado</h3>
-            <p>
-              Stocky nace para resolver un problema común en negocios pequeños y
-              medianos: pérdidas por control manual de inventario, poca
-              trazabilidad de ventas y reportes tardíos para tomar decisiones.
+    <main id="contenido-principal">
+      <section class="hero hero--page" aria-labelledby="hero-heading">
+        <div class="hero__grid">
+          <div class="hero__primary">
+            <p class="hero__issue">Portafolio 2026 — Tunja, Colombia</p>
+            <h1 id="hero-heading" class="hero__title">
+              Desarrollo software web y móvil enfocado en la eficiencia operativa.
+            </h1>
+            <p class="hero__lede">
+              Andrés Felipe Plazas Mendivelso. Estudiante de Ingeniería de Sistemas 
+              y desarrollador Full Stack Jr. React, Supabase y PostgreSQL 
+              aplicados al diseño de herramientas multiplataforma y sistemas de administración 
+              integrados.
             </p>
-            <div class="case-grid">
-              <div class="case-item">
-                <h4>Stack y arquitectura</h4>
-                <p>
-                  Frontend en React, backend y auth con Supabase, y datos en
-                  PostgreSQL. Separación por módulos para ventas, productos,
-                  empleados y reportes.
-                </p>
-              </div>
-              <div class="case-item">
-                <h4>Retos técnicos resueltos</h4>
-                <p>
-                  Sincronización de stock tras ventas, validación de
-                  transacciones, control de estados de interfaz y manejo robusto
-                  de errores para escenarios de red inestable.
-                </p>
-              </div>
-              <div class="case-item">
-                <h4>Decisiones clave</h4>
-                <p>
-                  Modelo de datos orientado a consistencia, componentes
-                  reutilizables, políticas de acceso por rol y flujos desacoplados
-                  para facilitar nuevas funcionalidades.
-                </p>
-              </div>
-              <div class="case-item">
-                <h4>Rendimiento y buenas prácticas</h4>
-                <p>
-                  Consultas optimizadas, reducción de renderizados innecesarios,
-                  carga diferida en vistas secundarias y estructura preparada
-                  para CI/CD y monitoreo.
-                </p>
-              </div>
-              <div class="case-item">
-                <h4>Diferenciador frente a otros POS</h4>
-                <p>
-                  Enfoque específico para negocios gastronómicos, simple de usar
-                  para operación diaria y diseñado para evolucionar sin rehacer
-                  la base técnica.
-                </p>
-              </div>
-            </div>
-          </article>
-        </section>
-      </div>
-
-      <div class="container container-certifications" id="certificaciones">
-        <section aria-labelledby="certifications-heading">
-          <h2 id="certifications-heading">Certificaciones y Títulos 🏆</h2>
-
-          <div class="certifications-section">
-            <div class="certifications-grid">
-              <article class="certification-card">
-                <div class="cert-header">
-                  <h3>Técnico en Sistemas 🎓</h3>
-                </div>
-                <button
-                  class="cert-btn-small cert-modal-btn"
-                  data-cert-title="Técnico en Sistemas"
-                  data-cert-image="assets/certificates/tecnico-sistemas.jpeg"
-                >
-                  Ver 🔗
-                </button>
-              </article>
-
-              <article class="certification-card">
-                <div class="cert-header">
-                  <h3>Certificación inglés nivel B1 🌍</h3>
-                </div>
-                <button
-                  class="cert-btn-small cert-modal-btn"
-                  data-cert-title="Diploma Intermediate Core"
-                  data-cert-image="assets/certificates/diploma-intermediate-core.png"
-                >
-                  Ver 🔗
-                </button>
-              </article>
-
-              <article class="certification-card">
-                <div class="cert-header">
-                  <h3>Certificación inglés nivel B2 🌍</h3>
-                </div>
-                <span class="cert-btn-small cert-btn-disabled">En Proceso</span>
-              </article>
+            <div class="hero__actions">
+              <a href="sobre-mi.html" class="btn btn--solid">Sobre mí</a>
+              <a href="proyectos.html" class="btn btn--outline">Ver proyectos</a>
             </div>
           </div>
-        </section>
-      </div>
+          <aside class="hero__aside">
+            <figure class="hero__portrait">
+              <img
+                src="assets/WhatsApp Image 2025-09-25 at 09.36.35.jpeg"
+                alt="Retrato de Andrés Plazas"
+                width="420"
+                height="520"
+              />
+              <figcaption class="hero__caption">
+                <span class="mono">Stack</span>
+                React · React Native · Supabase · PostgreSQL · JavaScript
+              </figcaption>
+            </figure>
+          </aside>
+        </div>
+
+        <nav class="page-index" aria-label="Índice del sitio">
+          <ol role="list">
+            <li>
+              <a href="sobre-mi.html">
+                <span class="page-index__num mono">01</span>
+                <span class="page-index__label">Sobre mí</span>
+              </a>
+            </li>
+            <li>
+              <a href="proyectos.html">
+                <span class="page-index__num mono">02</span>
+                <span class="page-index__label">Proyectos</span>
+              </a>
+            </li>
+            <li>
+              <a href="formacion.html">
+                <span class="page-index__num mono">03</span>
+                <span class="page-index__label">Formación</span>
+              </a>
+            </li>
+            <li>
+              <a href="contacto.html">
+                <span class="page-index__num mono">04</span>
+                <span class="page-index__label">Contacto</span>
+              </a>
+            </li>
+          </ol>
+        </nav>
+      </section>
     </main>
 
-    <!-- Modal para mostrar certificados -->
-    <div
-      id="certModal"
-      class="cert-modal"
-      role="dialog"
-      aria-labelledby="certModalTitle"
-      aria-hidden="true"
-    >
-      <div class="cert-modal-content">
-        <button class="cert-modal-close" aria-label="Cerrar modal">
-          &times;
-        </button>
-        <div class="cert-modal-header">
-          <h3 id="certModalTitle">Certificado</h3>
-        </div>
-        <div class="cert-modal-body">
-          <img id="certModalImage" src="" alt="Imagen del certificado" />
-          <p class="cert-modal-placeholder">
-            📁 Espacio para la imagen del certificado<br />
+    <footer class="site-footer" role="contentinfo">
+      <div class="site-footer__grid">
+        <div class="site-footer__col">
+          <p class="site-footer__name">Andrés Felipe Plazas Mendivelso</p>
+          <p class="site-footer__tagline mono">
+            Desarrollador Full Stack Jr · React · React Native · Supabase · PostgreSQL
           </p>
         </div>
+        <div class="site-footer__col site-footer__col--links">
+          <a
+            href="https://www.linkedin.com/in/plazas-mendivelso-andrés-felipe-b122b7309"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/AndresPlazas10"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
+        <div class="site-footer__col site-footer__col--meta">
+          <p class="mono">© 2026</p>
+          <p class="mono">Tunja, Boyacá</p>
+        </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formación | Andrés Plazas</title>
+    <meta
+      name="description"
+      content="Certificaciones y formación académica de Andrés Plazas: Google Cloud, técnico en sistemas e inglés."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="Javascript/navigation.js" defer></script>
+    <script src="Javascript/certModal.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
+
+    <header class="masthead" role="banner">
+      <div class="masthead__inner">
+        <a href="index.html" class="masthead__brand" aria-label="Inicio">
+          <span class="masthead__name">Andrés Plazas</span>
+          <span class="masthead__role">Full Stack Jr</span>
+        </a>
+        <nav class="masthead__nav" role="navigation" aria-label="Navegación principal">
+          <ol role="list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="formacion.html">Formación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido-principal">
+      <section class="section section--certs section--page" aria-labelledby="certifications-heading">
+        <div class="section__header">
+          <span class="section__index mono">03</span>
+          <h1 id="certifications-heading" class="section__title">Formación</h1>
+        </div>
+        <ul class="cert-list" role="list">
+          <li class="cert-row cert-row--document">
+            <span class="cert-row__year mono">2021</span>
+            <div class="cert-row__content">
+              <h2 class="cert-row__title">Técnico en Sistemas</h2>
+              <p class="cert-row__meta mono">
+                Documento institucional 
+              </p>
+            </div>
+            <div class="cert-row__actions">
+              <button
+                type="button"
+                class="cert-row__action cert-modal-btn"
+                data-cert-title="Técnico en Sistemas"
+                data-cert-image="assets/certificates/tecnico-sistemas.jpeg"
+              >
+                Ver documento
+              </button>
+            </div>
+          </li>
+          <li class="cert-row cert-row--verified">
+            <span class="cert-row__year mono">2025</span>
+            <div class="cert-row__content">
+              <h2 class="cert-row__title">Google Cloud Computing Foundations</h2>
+              <p class="cert-row__meta mono">
+                Emitido por Google Cloud · Verificable en Credly
+              </p>
+            </div>
+            <div class="cert-row__actions">
+              <button
+                type="button"
+                class="cert-row__action cert-modal-btn cert-modal-btn--credly"
+                data-cert-title="Google Cloud Computing Foundations"
+                data-cert-image="assets/certificates/certificado_google_computing.png"
+              >
+                Ver documento
+              </button>
+            </div>
+          </li>
+          <li class="cert-row cert-row--document">
+            <span class="cert-row__year mono">B1</span>
+            <div class="cert-row__content">
+              <h2 class="cert-row__title">Inglés — Nivel intermedio</h2>
+              <p class="cert-row__meta mono">
+                Diploma Intermediate Core · Documento institucional
+              </p>
+            </div>
+            <div class="cert-row__actions">
+              <button
+                type="button"
+                class="cert-row__action cert-modal-btn"
+                data-cert-title="Inglés — Nivel intermedio"
+                data-cert-image="assets/certificates/diploma-intermediate-core.png"
+              >
+                Ver documento
+              </button>
+            </div>
+          </li>
+          <li class="cert-row cert-row--pending">
+            <span class="cert-row__year mono">B2</span>
+            <div class="cert-row__content">
+              <h2 class="cert-row__title">Inglés — Nivel avanzado</h2>
+              <p class="cert-row__meta mono">En proceso</p>
+            </div>
+            <span class="cert-row__action cert-row__action--disabled">En curso</span>
+          </li>
+        </ul>
+
+        <p class="section__next mono">
+          <a href="contacto.html">Siguiente — Contacto →</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="site-footer__grid">
+        <div class="site-footer__col">
+          <p class="site-footer__name">Andrés Felipe Plazas Mendivelso</p>
+          <p class="site-footer__tagline mono">
+            Desarrollador Full Stack Jr · React · React Native · Supabase · PostgreSQL
+          </p>
+        </div>
+        <div class="site-footer__col site-footer__col--links">
+          <a
+            href="https://www.linkedin.com/in/plazas-mendivelso-andrés-felipe-b122b7309"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/AndresPlazas10"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
+        <div class="site-footer__col site-footer__col--meta">
+          <p class="mono">© 2026</p>
+          <p class="mono">Tunja, Boyacá</p>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      id="certModal"
+      class="cert-modal"
+      role="dialog"
+      aria-labelledby="certModalTitle"
+      aria-hidden="true"
+    >
+      <div class="cert-modal__panel">
+        <button type="button" class="cert-modal__close" aria-label="Cerrar">
+          ×
+        </button>
+        <header class="cert-modal__header">
+          <h2 id="certModalTitle">Documento</h2>
+        </header>
+        <div class="cert-modal__body">
+          <img id="certModalImage" src="" alt="Documento de respaldo" />
+          <p class="cert-modal__placeholder">
+            No se pudo cargar el documento.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
